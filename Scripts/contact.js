@@ -9,7 +9,7 @@ form.addEventListener('submit', (e) => {
      message.push('Email is not valid');
      document.getElementById('span').style.display= 'inline-block';
     }
-    if(typeof(name.value) === NaN || name.value.length <= 3) {
+    if((typeof(name.value) !== String )|| (name.value.length <= 3)) {
        message.push('Name is invalid');
        document.getElementById('span').style.display= 'inline-block';
     }

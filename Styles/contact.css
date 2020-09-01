@@ -93,16 +93,18 @@ section {
     font-weight: normal;
 }
 .inputBox input {
-    padding: 10px;
+    padding: 5px 12px 5px 3px;
     background-color:  rgba(196, 196, 196, 0.1);
     margin-bottom: 8px;
     margin-left: 70px;
+    border: 1px solid wheat;
 }
 .inputBox textarea {
-    padding: 10px;
+    padding: 5px 25px 37px 5px ;
     background: rgba(196, 196, 196, 0.1);
     width: 77%;
     margin-left: 70px;
+    border: 1px solid wheat;
 }
 .inputBox input[type="submit"] {
 background-color: #017AFF;
@@ -112,6 +114,14 @@ margin-top: 20px;
 color: white;
 margin-left: 70px;
 font-family: 'Poppins', sans-serif;
+cursor: pointer;
+}
+.inputBox input[type="submit"]:focus {
+    outline: none;
+    
+}
+.inputBox input[type="submit"]:hover {
+    background-color: #0a62c0;
 }
 footer {
     display: flex;
@@ -154,6 +164,7 @@ span {
     display: none;
     color: crimson;
 }
+
 @media only screen and (max-width: 768px) {
     body {
         overflow-x: hidden;
@@ -211,7 +222,7 @@ span {
         transform: translateX(100%);
         background-color: white;
         color: black;
-        transition: transform 0.5s ease-in;
+        transition: transform 0.5s ease-in-out;
         justify-content: flex-start;
 
 
@@ -241,5 +252,5 @@ span {
     }
 }
 .nav-active {
-    transform: translateX(0%);
+   transform: translateX(0%);
 }
