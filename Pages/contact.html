@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,15 +18,22 @@
                    
                     <li class="item"><a href="../index.html">Home</a></li>
                     <li class="item"><a href="#">About</a></li>
-                    <li class="item"><a href="#">Blog</a></li>
+                    <li class="item"><a href="blog.html">Blog</a></li>
+                    <li class="item" id="contactlist"><a href="#">Contact</a></li>
+                    <li class="item" id="signinlist"><a href="blog.html">Sign In</a></li>
                     
                 </ul>
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
            </nav>
          <div class="center">
             <section>
                 <div class="container">
                     <div class="contactus">
-                        <div>
+                        
                             <h2>Contact Us</h2>
                             <ul class="us">
                                 <li>
@@ -43,25 +49,22 @@
                                     <span>+250785412446</span>
                                 </li>
                             </ul>
-                            <ul class="sci">
-                                <li><a href="#"></a></li>
-                                <li><a href="#"></a></li>
-                                <li><a href="#"></a></li>
-            
-                            </ul>
-                        </div>
+                            
+                        
                     </div>
                     <div class="contactForm">
                         <h2 id="intouch">Get in Touch</h2>
                         <h2 id='free'>Feel free to talk to us</h2>
-                        <div class="formBox">
+                        <div id="error"></div>
+                        <form id="form" class="formBox">
                             <div class="inputBox">
-                                <input type="text" name="" placeholder="Full name" required>
+                                <input id='name' type="text" name="" placeholder="Full name" required>
                                 
                             </div>
                             
                             <div class="inputBox">
-                                <input type="email" name=""  placeholder="Email" required>
+                                <input id="email" type="email" name=""  placeholder="Email" required>
+                                <span id="span"><i class="fas fa-exclamation-circle"></i></span>
                                 
                             </div>
                             <div class="inputBox">
@@ -71,7 +74,7 @@
                             <div class="inputBox ">
                                 <input type="submit" value="Submit">
                             </div>
-                        </div>
+                        </form>
                     </div>
                 </div>
             </section>
@@ -93,6 +96,9 @@
     
          </footer>  
     </div>
-    
+    <script src="../Scripts/contact.js"></script>
+    <script src="../Scripts/app.js"></script>
 </body>
 </html>
+
+
