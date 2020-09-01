@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #017AFF;
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+}
+.logo {
+   
+    height: 2.2em;
+ }
+ .imgLogo{
+     margin-top: 1em;
+     
+ }
+ .logForm {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 70px;
+    flex-direction: column;
+    background-color: white;
+    padding: 60px 40px;
+    border-radius: 20px;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.3);
+ }
+ .logForm #signIn {
+    margin-top: -50px;
+    margin-left: 127px;
+    margin-bottom: 10px;
+    font-weight: normal;
+    font-style: normal;
+
+}
+.inputBox input {
+    padding: 5px 30px;
+    background-color:  rgba(196, 196, 196, 0.1);
+    margin-bottom: 12px;
+    margin-left: 45px;
+    margin-right: 45px;
+    border-radius: 50px
+}
+.inputBox button {
+    background-color: #017AFF;
+    border-radius: 62px;
+    padding: 2px 30px;
+    margin-top: 20px;
+    color: white;
+    margin-left: 70px;
+    font-family: 'Poppins', sans-serif;
+}
+hr {
+    width: 200px;
+    margin-top: 20px;
+    margin-left: 60px;
+}
+.or {
+    background: #fff;
+    width: 30px;
+    margin-top: -15px;
+    margin-right: auto;
+    margin-bottom: 10px;
+    margin-left: 145px;
+    padding-left:5px;
+}
+#signinGmail {
+    background-color: #6A79FE;
+    margin-top: -5px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+#signinBtn {
+    padding: 2px 67px; 
+    cursor: pointer;
+}
+#register {
+    text-decoration: none;
+    color: #017AFF;
+}
+#register:hover {
+    
+    color:  #4000f1;
+    background-color: rgba(0, 128, 128, 0.3);
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: rgba(15,55,92,0.3);
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 165px;
+    color: white;
+    margin-left: -15px;
+    
+}
+#footerImage {
+    height: 35px;
+}
+span {
+    margin-left: 0.5rem;
+}
+#error {
+    background-color: crimson;
+    color: white;
+    margin-left: 50px;
+    margin-bottom: .5rem;
+    padding: 0rem .3rem;
+    position: relative;
+
+}
+#span {
+    display: none;
+    color: crimson;
+    margin-left: 0rem;
+}
+input:focus {
+    outline: none;
+}
+button:focus{
+    outline: none;
+}
+@media only screen and (max-width: 768px) {
+    .logForm {
+        padding-top: 60px;
+        margin: auto;
+        justify-content: center;
+        align-content: center;
+        margin-left: 5px;
+        margin-right: 20px;
+        margin-top: 40px ;
+        flex-wrap: wrap;
+    }
+    .inputBox input {
+    padding: 5px 10px;
+    margin-left: 1.2rem;
+    }
+    .inputBox button {
+        padding: 2px 30px;
+        margin-left: 1.2rem; 
+        
+    }
+    hr {
+        margin-left: .8rem;  
+        
+    }
+    .or {
+        
+        margin-top: -15px;
+        margin-right: auto;
+        margin-bottom: 10px;
+        margin-left: 6rem; 
+        
+    }
+    .logForm #signIn {
+        
+        margin-left: 5rem;
+     
+    }
+    #account {
+        font-size: 1em;
+    }
+footer {
+    width: 100vw;
+    margin-top: 38vh;
+       
+}
+.footerLogo, .social{
+    display: none;
+}
+}
