@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+}
+.wrapper {
+    background-color: #017AFF;
+    width: 75%;
+    height: 600px;
+    display: flex;
+    justify-content: space-between;
+}
+ul {
+    list-style-type: none;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+.menu li{
+    
+    padding: 18px 1px;
+    font-size: 1.3em;
+}
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin-right: 20px;
+    margin-top: 5px;
+}
+.menu .item{
+    margin-right: 80px;
+    
+}
+.center {
+    color: white;
+    align-self: flex-start;
+  
+    margin-top: 210px;
+    margin-left: 100px;
+
+}
+.logo {
+   
+   height: 2.2em;
+}
+.imgLogo{
+    margin-top: 1em;
+    margin-left: -40em;
+}
+.buttonGet {
+    color: white;
+    padding: 10px 30px;
+    background-color: #002753;
+    margin-top: 10px;
+    border-radius: 1.5em;
+}
+.imageProfile img {
+width: 450px;
+height: 400px;
+position: absolute;
+margin-top: 100px;
+margin-left: -225px;
+}
+.buttonContact {
+    position: absolute;
+    padding: 5px 40px;
+    background-color: #002753;
+    margin-top: 24px;
+    color: white;
+    border-radius: 1.5em;
+    margin-left: 450px;
+  
+
+}
+footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background-color: rgba(15,55,92,0.3);
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 53px;
+    color: white;
+    
+    
+}
+#footerImage {
+    height: 35px;
+}
+span {
+    margin-left: 0.5rem;
+}
