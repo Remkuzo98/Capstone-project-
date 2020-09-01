@@ -82,16 +82,19 @@ hr {
     padding: 2px 67px; 
     cursor: pointer;
 }
-#register {
+.formBox #account {
+    margin-left: 35px;
+}
+.formBox #account  a {
     text-decoration: none;
     color: #017AFF;
 }
-#register:hover {
+.formBox #account  a:hover {
     
-    color:  #4000f1;
+    color: #4000f1;
     background-color: rgba(0, 128, 128, 0.3);
+    
 }
-
 footer {
     display: flex;
     flex-direction: row;
@@ -99,7 +102,7 @@ footer {
     background-color: rgba(15,55,92,0.3);
     justify-content: space-evenly;
     align-items: center;
-    margin-top: 165px;
+    margin-top: 82px;
     color: white;
     margin-left: -15px;
     
@@ -110,25 +113,8 @@ footer {
 span {
     margin-left: 0.5rem;
 }
-#error {
-    background-color: crimson;
-    color: white;
-    margin-left: 50px;
-    margin-bottom: .5rem;
-    padding: 0rem .3rem;
-    position: relative;
-
-}
-#span {
+#span1, #span2, #span3, #span4 {
     display: none;
-    color: crimson;
-    margin-left: 0rem;
-}
-input:focus {
-    outline: none;
-}
-button:focus{
-    outline: none;
 }
 @media only screen and (max-width: 768px) {
     .logForm {
