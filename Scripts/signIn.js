@@ -6,16 +6,16 @@ const error = document.getElementById('error');
 form.addEventListener('submit', (e) => {
     let message = [];
     if(name.value.length < 6 ){
-        alert('Your name must be atleast 6 or more chaaracters')
-        e.preventDefault();
-        document.getElementById('span').style.display= 'inline-block';  
+        message.push('Name is too short'); 
+       
     }
     if (!isPassword(password.value)) {
-
-     alert('Password must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters')
-     e.preventDefault();
-     document.getElementById('span').style.display= 'inline-block';
+      message.push('Password must contain atleast one capital letter and a number !')
     }
+    if (message.length > 0) {
+        e.preventDefault();
+        error.innerText = message.join(',');
+    }      
 });
 
 function isPassword(password) {
