@@ -208,9 +208,6 @@ footer span {
     background-color: white;
 
 }
-.nav-active {
-    transform: translateX(0%);
-}
 
 @media only screen and (max-width: 768px) {
     body {
@@ -221,6 +218,9 @@ footer span {
     }
     .menulogin {
         display: none;
+    }
+    .menu #signinlist{
+        display: inherit;
     }
     .logo {
    
@@ -382,5 +382,8 @@ footer span {
     }
 }
 
+.nav-active {
+    transform: translateX(0%);
+}
 
   
