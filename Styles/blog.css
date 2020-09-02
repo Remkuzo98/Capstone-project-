@@ -36,9 +36,17 @@ body {
      margin-left: 30px;
 
  }
+ .menu #signinlist {
+    display: none;
+}
 .menu a {
     color: white;
     text-decoration: none;
+}
+.menu a:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    text-decoration: underline;
+    padding: .2rem .4rem;
 }
 .menulogin li {
     background-color: #002753;
@@ -190,7 +198,24 @@ footer {
 footer span {
     margin-left: 0.5rem;
 }
+.burger {
+    display: none;
+}
+.burger div {
+    width: 25px;
+    height:3px;
+    margin:5px;
+    background-color: white;
+
+}
+.nav-active {
+    transform: translateX(0%);
+}
+
 @media only screen and (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
     .menu {
         display : none;
     }
@@ -212,7 +237,7 @@ footer span {
         
     }
     .inputSearch input {
-        padding: 1px 5px;
+        padding: 4px 5px;
         font-size: 0.5rem;
         
        
@@ -239,7 +264,7 @@ footer span {
     
     }
     .menuselect a {
-        padding: 1px 5px;
+        padding: 3px 5px;
         font-size: 0.5em;
     }
     .articles {
@@ -250,7 +275,7 @@ footer span {
         
     }
     .comments {
-        width: 80%;
+        width: 80vw;
     }
     .articleDisplay {
         display: flex;
@@ -263,7 +288,7 @@ footer span {
 
     }
     .articles .cover1 {
-        width: 80%;
+        width: 80vw;
         
         
         
@@ -271,7 +296,7 @@ footer span {
     }
     .articles .cover2 {
        
-        width: 80%;
+        width: 80vw;
        
         
         
@@ -279,7 +304,7 @@ footer span {
     }
     .articles .cover3 {
         
-        width: 80%;
+        width: 80vw;
        
         
         height: 20vh;
@@ -313,6 +338,39 @@ footer span {
         flex-direction: column;
         margin-left: 5px;
         flex-wrap: wrap;
+    }
+    .menu {
+        position: absolute;
+        right: 0px;
+        height: 50vh;
+        top : 16vh;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 40%;
+        transform: translateX(100%);
+        background-color: white;
+        color: black;
+        transition: transform 0.5s ease-in;
+        justify-content: flex-start;
+
+
+    }
+    .menu a {
+        
+        color: black;
+        
+    }
+    .menu li {
+        margin-top: .6rem;
+
+    }
+    .burger {
+        display: block;
+        float: right;
+        margin-top: -2rem;
+        cursor: pointer;
+        
     }
     footer {
         
