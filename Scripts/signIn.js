@@ -5,12 +5,12 @@ const error = document.getElementById('error');
 
 form.addEventListener('submit', (e) => {
     let message = [];
-    if(name.value.length < 6 ){
-        message.push('Name is too short'); 
+    if(!isName((name.value))|| (name.value.length <= 3)) {
+        message.push('Name is invalid');
        
-    }
+     }
     if (!isPassword(password.value)) {
-      message.push('Password must contain atleast one capital letter and a number !')
+      message.push('Password must contain atleast one capital letter and a number !');
     }
     if (message.length > 0) {
         e.preventDefault();
@@ -18,6 +18,12 @@ form.addEventListener('submit', (e) => {
     }      
 });
 
+function isName(name){
+    return /^[a-zA-Z' ']+$/.test(name)
+}
 function isPassword(password) {
     return /(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}/.test(password)
 }
+
+
+
