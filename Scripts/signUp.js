@@ -3,43 +3,44 @@ const password = document.getElementById('password');
 const form = document.getElementById('form');
 const confirmPassword = document.getElementById('confirmPassword');
 const email = document.getElementById('email');
+const error = document.getElementById('error');
 
 form.addEventListener('submit', (e) => {
     let message = [];
-    if(name.value.length < 6 ){
-        e.preventDefault();
+    if(!isName((name.value))|| (name.value.length <= 3)) {
+        message.push('Name is invalid');
         document.getElementById('span1').style.display= 'inline-block';
-        alert('Your name must be atleast 6 or more chaaracters')
-        
-    }
+     }
      if (!isEmail(email.value)) {
-        e.preventDefault();
+        message.push('Email is invalid')
         document.getElementById('span2').style.display= 'inline-block';
-        alert('Email is not valid')
+        
         
     }
      if (!isPassword(password.value)) {
-         e.preventDefault();
+        message.push('Password must contain atleast one capital letter and a number !');
          document.getElementById('span3').style.display= 'inline-block';
-     alert('Password must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters')
      
     }
      if (password.value !== confirmPassword.value) {
-         e.preventDefault();
          document.getElementById('span4').style.display= 'inline-block';
-         alert('Password doesn\'t match');
+         message.push('Password doesn\'t match');
         
+    }
+    if (message.length > 0) {
+        e.preventDefault();
+        error.innerText = message.join('\n');
     }
     
 });
-
-function isPassword(password) {
-    return /(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}/.test(password)
+function isName(name){
+    return /^[a-zA-Z' ']+$/.test(name)
 }
 function isEmail(email) {
     return /[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/.test(email)
 }
-function display() {
-    
-    return (x,y)
+function isPassword(password) {
+    return /(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}/.test(password)
 }
+
+

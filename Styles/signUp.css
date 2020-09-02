@@ -49,6 +49,9 @@ body {
     margin-right: 45px;
     border-radius: 50px
 }
+.inputBox input:focus {
+    outline: none;
+}
 .inputBox button {
     background-color: #017AFF;
     border-radius: 62px;
@@ -57,6 +60,9 @@ body {
     color: white;
     margin-left: 70px;
     font-family: 'Poppins', sans-serif;
+}
+.inputBox button:focus {
+    outline: none;
 }
 hr {
     width: 200px;
@@ -78,9 +84,15 @@ hr {
     margin-bottom: 20px;
     cursor: pointer;
 }
+#signinGmail:hover {
+    background-color: #2c3588;
+}
 #signinBtn {
     padding: 2px 67px; 
     cursor: pointer;
+}
+#signinBtn:hover{
+    background-color: #0c5db4; 
 }
 .formBox #account {
     margin-left: 35px;
@@ -115,8 +127,22 @@ span {
 }
 #span1, #span2, #span3, #span4 {
     display: none;
+    color: crimson;
+
+}
+#error {
+    background-color: crimson;
+    color: white;
+    margin-left: 10px;
+    margin-bottom: .5rem;
+    padding: 0rem .7rem;
+    position: relative;
+
 }
 @media only screen and (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
     .logForm {
         padding-top: 60px;
         margin: auto;
