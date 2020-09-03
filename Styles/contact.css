@@ -151,6 +151,17 @@ span {
     background-color: white;
 
 }
+#success {
+    background-color: rgb(17, 148, 61);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    transition:  all 0.2s ease-in-out;
+    padding: 0rem .7rem;
+    display: none;
+    
+    position: relative;
+    
+}
 #error {
     background-color: crimson;
     color: white;
@@ -158,7 +169,7 @@ span {
     margin-bottom: .5rem;
     padding: 0rem .7rem;
     position: relative;
-
+    transition: transform 0.5s ease-in-out;
 }
 .span {
     display: none;

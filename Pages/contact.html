@@ -6,6 +6,7 @@
     <title>Contact page</title>
     <script src="https://kit.fontawesome.com/4fe625103c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../Styles/contact.css">
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase.js"></script>
 </head>
 <body>
     <div class="wrapper">
@@ -29,6 +30,7 @@
                     <div class="line3"></div>
                 </div>
            </nav>
+           <div id="success"></div>
          <div class="center">
             <section>
                 <div class="container">
@@ -52,11 +54,13 @@
                             
                         
                     </div>
+                    
                     <div class="contactForm">
+                        
                         <h2 id="intouch">Get in Touch</h2>
                         <h2 id='free'>Feel free to talk to us</h2>
                         <div id="error"></div>
-                        <form id="form" class="formBox">
+                        <form id="form" class="formBox" name="form" >
                             <div class="inputBox">
                                 <input id='name' type="text" name="" placeholder="Full name" required>
                                 <span class="span"><i class="fas fa-exclamation-circle"></i></span>
@@ -72,7 +76,7 @@
                                 
                             </div>
                             <div class="inputBox ">
-                                <input type="submit" value="Submit">
+                                <input id="submitbtn" type="submit" value="Submit">
                             </div>
                         </form>
                     </div>
@@ -97,7 +101,6 @@
          </footer>  
     </div>
     <script src="../Scripts/contact.js"></script>
-    <script src="../Scripts/app.js"></script>
 </body>
 </html>
 
