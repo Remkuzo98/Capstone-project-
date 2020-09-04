@@ -6,6 +6,7 @@
     <title>Sign In</title>
     <script src="https://kit.fontawesome.com/4fe625103c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../Styles/signIn.css">
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase.js"></script>
 </head>
 <body>
     <div class="wrapper">
@@ -18,11 +19,11 @@
             <form id="form" class="formBox">
                 <div class="inputBox">
                     <input id="name" type="text" placeholder="Your full name" required>
-                    <span id="span"><i class="fas fa-exclamation-circle"></i></span>
+                    <span id="span1"><i class="fas fa-exclamation-circle"></i></span>
                 </div>
                 <div class="inputBox">
                     <input id="password" type="password" placeholder="Your password" required>
-                    <span id="span"><i class="fas fa-exclamation-circle"></i></span>
+                    <span id="span2"><i class="fas fa-exclamation-circle"></i></span>
                 </div>
                 <div class="inputBox">
                     <button type="submit" id="signinBtn">Sign In</button>
